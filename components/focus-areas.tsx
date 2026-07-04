@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Wrench, Car, Settings, Gauge, Wind, ArrowRight } from "lucide-react"
+import { Wrench, Car, Settings, Gauge, Zap, ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 export default function FocusAreas() {
@@ -22,16 +22,16 @@ export default function FocusAreas() {
     },
     {
        icon: Gauge,
-      title: "ECU- & vaihteisto-ohjelmoinnit",
-      description: "Ohjelmoinnit erityisesti Xhp vaihteistoille. Toteutamme myös yksilöllisen ohjelmoinnin.",
+      title: "Ohjainlaitteiden optimoinnit ja lastutukset",
+      description: "Ohjainlaitteiden optimoinnit ja lastutukset ammattitaidolla, erityisesti Xhp-vaihteistoille. Toteutamme myös yksilöllisen ohjelmoinnin.",
       image: "/ecutuning.jpg",
       href: "/palvelut",
     },
     {
-      icon: Wind,
-      title: "Pakoputkisto",
-      description: "Alkuperäis-, custom- ja performanceputkistot sekä hitsaustyöt laadukkaasti ja näyttävästi. Myös EGR/DPF-poistot.",
-      image: "/putket.jpg",
+      icon: Zap,
+      title: "Sähköinen vianhaku ja asennukset",
+      description: "Sähkövikojen diagnosointi ja korjaus sekä sähköasennukset tarkasti ja ammattitaidolla.",
+      image: "/vtec.automoottori.avif",
       href: "/palvelut",
     },
   ]

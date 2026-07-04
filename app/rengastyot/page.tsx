@@ -44,8 +44,8 @@ const features = [
   },
   {
     icon: Shield,
-    title: "TAKUU",
-    description: "Kaikelle työlle 2 vuoden takuu.",
+    title: "TAKUU TYÖLLE",
+    description: "12 kk tai 20 000 km takuu kaikelle työlle.",
   },
   {
     icon: Clock,

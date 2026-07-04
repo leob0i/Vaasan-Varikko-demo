@@ -10,15 +10,14 @@ export default function Footer() {
           <div>
             <div className="flex items-center space-x-3 mb-8">
               <div className="w-10 h-10 border border-primary flex items-center justify-center">
-                <span className="text-primary font-display font-bold text-lg">JK</span>
+                <span className="text-primary font-display font-bold text-lg">VA</span>
               </div>
               <div className="flex flex-col">
-                <span className="font-display font-bold text-lg tracking-wider text-foreground uppercase">JK</span>
-                <span className="text-[10px] tracking-ultra-wide text-muted-foreground uppercase">Performance</span>
+                <span className="font-display font-bold text-lg tracking-wider text-foreground uppercase">VolttiAutokorjaamo</span>
               </div>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed mb-8">
-              Luotettavaa ja laadukasta autohuoltoa. Kaikelle tyolle 2 vuoden takuu.
+              Luotettavaa ja laadukasta autohuoltoa. 12 kk tai 20 000 km takuu kaikelle työlle.
             </p>
             <div className="flex space-x-4">
               <a
@@ -80,7 +79,7 @@ export default function Footer() {
             <Link href="/#yhteydenotto" className="block space-y-5 hover:opacity-80 transition-opacity duration-300">
               <div className="flex items-start gap-4">
                 <MapPin className="w-4 h-4 text-primary mt-0.5" />
-                <span className="text-muted-foreground text-sm">Sulapuronkatu 4, 33700 Tampere</span>
+                <span className="text-muted-foreground text-sm">Santaradantie 7 D 123-125, 01380 Vantaa</span>
               </div>
               <div className="flex items-center gap-4">
                 <Phone className="w-4 h-4 text-primary" />
@@ -88,7 +87,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-4">
                 <Mail className="w-4 h-4 text-primary" />
-                <span className="text-muted-foreground text-sm">jk-performance@outlook.com</span>
+                <span className="text-muted-foreground text-sm">info@volttiautokorjaamo.fi</span>
               </div>
               <div className="flex items-start gap-4">
                 <Clock className="w-4 h-4 text-primary mt-0.5" />
@@ -103,7 +102,7 @@ export default function Footer() {
 
         <div className="border-t border-border mt-16 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-muted-foreground text-xs tracking-wide">© 2026 JK Performance</p>
+            <p className="text-muted-foreground text-xs tracking-wide">© 2026 VolttiAutokorjaamo</p>
             <div className="flex space-x-8">
               <Link href="#" className="text-muted-foreground hover:text-primary text-xs tracking-wide transition-colors duration-300">
                 Tietosuoja

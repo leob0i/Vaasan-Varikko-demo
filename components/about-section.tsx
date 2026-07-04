@@ -13,8 +13,8 @@ export default function AboutSection() {
             },
             {
               icon: Shield,
-              title: "3 vuoden varaosatakuu",
-              description: "Mekonomenin laadukkaat varaosat ja uuden auton takuu säilyy.",
+              title: "Varaosien takuu: 12 kk / 20 000 km",
+              description: "Laadukkaat varaosat ja huolellinen työn jälki.",
             },
             {
               icon: Award,

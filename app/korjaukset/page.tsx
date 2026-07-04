@@ -44,8 +44,8 @@ const features = [
   },
   {
     icon: Shield,
-    title: "2V TAKUU",
-    description: "Kaikelle korjaustyölle 2 vuoden takuu.",
+    title: "TAKUU TYÖLLE",
+    description: "12 kk tai 20 000 km takuu kaikelle korjaustyölle.",
   },
   {
     icon: Search,

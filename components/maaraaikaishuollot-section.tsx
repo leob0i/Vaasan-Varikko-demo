@@ -14,13 +14,13 @@ export default function MaaraaikaishuollotSection() {
         </h3>
         <div className="grid md:grid-cols-3 gap-8 border-t border-white/15 pt-10">
           <p className="text-white/80 leading-relaxed">
-            Yhdistämme nykyaikaisen diagnostiikan, performance-osaamisen ja laadukkaan huoltotyön — aina määräaikaishuolloista ECU- ja xHP-ohjelmointeihin sekä custom-pakoputkistoihin.
+            Voltti Autokorjaamo tarjoaa täyden autonkorjaus ja -huolto palvelun. Omaamme pitkän kokemuksen alalta ja olemme erikoistuneet auton sähköihin.
           </p>
           <p className="text-white/80 leading-relaxed">
-            Osana Mekonomen-ketjua käytämme laadukkaita varaosia, valmistajan huolto-ohjeita ja tarjoamme jopa 3 vuoden varaosatakuun. Myös uuden auton tehdastakuu säilyy huolloissamme.
+            Auton huolto- ja korjaustöiden lisäksi teemme sähkövianhaut, ohjainlaitteiden ohjelmoinnit, optimoinnit ja lastutukset ammattitaidolla.
           </p>
           <p className="text-white/80 leading-relaxed">
-            Olipa kyse päivittäisestä käyttöautosta tai harrasteautosta, saat meiltä ammattitaitoista palvelua ja ratkaisut juuri sinun autoosi.
+            Olemme vahvasti verkostoituneet alalla varaosatoimittajiin sekä alihankkijoihin. Kauttamme saat varaosan kuin varaosan mahdollisimman edulliseen hintaan. Kaikki asiakkaat ja automerkit ovat tervetulleita!
           </p>
         </div>
       </div>

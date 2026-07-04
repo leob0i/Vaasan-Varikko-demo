@@ -188,7 +188,7 @@ export default function AutonOhjelmointiPage() {
                 "Vikakoodien poisto tarvittaessa",
                 "Koeajo ja testaus",
                 "Kirjallinen dokumentaatio",
-                "Takuu ohjelmointityölle",
+                "Takuu ohjelmointityölle: 12 kk tai 20 000 km",
               ].map((item, index) => (
                 <div 
                   key={index}

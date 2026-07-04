@@ -13,7 +13,7 @@ export default function HeroSection() {
       subtitle: "Joustava rahoitus",
       description:
         "Ohjelmoinnit luotettavasti ja ammattitaidolla.",
-      image: "/moottori.webp",
+      image: "/pipes.webp",
       objectPosition: "center center",
       overlayOpacity: "0.50",
       cta: "Varaa aika",
@@ -31,21 +31,21 @@ export default function HeroSection() {
       overlayOpacity: "0.35",
       cta: "Katso huollot",
       featureIcon: Shield,
-      featureTitle: "3 vuoden varaosatakuu",
-      featureDescription: "Mekonomenin laadukkaat varaosat ja uuden auton takuu säilyy.",
+      featureTitle: "Varaosien takuu: 12 kk / 20 000 km",
+      featureDescription: "Laadukkaat varaosat ja huolellinen työn jälki.",
     },
     {
-      title: "Pakoputkistot",
-      subtitle: "Tyolle ja varaosille",
+      title: "Sähkötyöt vuosien kokemuksella",
+      subtitle: "Erikoistuneet auton sähköihin",
       description:
-        "Teemme custom putkistot ja muutkin hitsaus ja korin muutos työt ammattitaidolla ja tyylillä.",
-      image: "/pipes.webp",
+        "Teemme sähkövianhaut, ohjainlaitteiden ohjelmoinnit ja asennukset tarkasti ja ammattitaidolla.",
+      image: "/moottori.webp",
       objectPosition: "center center",
       overlayOpacity: "0.50",
       cta: "Lue lisaa",
       featureIcon: Award,
-      featureTitle: "Putkistot ja hitsaus",
-      featureDescription: "Custom-putkistot ja hitsaustyöt ammattitaidolla.",
+      featureTitle: "Auton sähkötyöt",
+      featureDescription: "Sähkövianhaut, ohjelmoinnit ja asennukset ammattitaidolla.",
     },
   ]
 
@@ -139,8 +139,9 @@ export default function HeroSection() {
       <div className="absolute bottom-6 inset-x-0 z-20 pointer-events-none">
         <div className="container mx-auto px-4">
           <p className="text-white/60 text-xs sm:text-sm tracking-widest uppercase font-light">
-            <span>MA - PE 08:00 - 17:00</span>
-            <span className="ml-6">LA - SU KIINNI</span>
+            <span>MA - PE 08:00 - 18:00</span>
+            <span className="ml-6">LA: SOPIMUKSEN MUKAAN</span>
+            <span className="ml-6">SU: KIINNI</span>
           </p>
         </div>
       </div>

@@ -18,9 +18,9 @@ const barlow = Barlow({
 })
 
 export const metadata: Metadata = {
-  title: "JK Performance - Premium Autokorjaamo",
+  title: "VolttiAutokorjaamo - Premium Autokorjaamo",
   description:
-    "JK Performance tarjoaa laadukasta autohuoltoa, ohjelmointeja ja korjauspalvelua kaikille automerkeille. 2 vuoden takuu kaikelle tyolle.",
+    "VolttiAutokorjaamo tarjoaa laadukasta autohuoltoa, ohjelmointeja ja korjauspalvelua kaikille automerkeille. 12 kk tai 20 000 km takuu kaikelle työlle.",
   generator: 'v0.app'
 }
 
