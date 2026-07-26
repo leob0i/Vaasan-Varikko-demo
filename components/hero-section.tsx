@@ -1,25 +1,26 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { ChevronLeft, ChevronRight, ArrowRight, Wrench, Shield, Award } from "lucide-react"
+import { ChevronLeft, ChevronRight, ArrowRight, Receipt, Shield, Users } from "lucide-react"
 
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0)
 
   const slides = [
     {
-      title: "Ohjelmoinnit Alkaen 320€",
-      subtitle: "Joustava rahoitus",
+      title: "Laskumahdollisuus",
+      subtitle: "Jopa 30 vrk koroton maksuaika",
       description:
-        "Ohjelmoinnit luotettavasti ja ammattitaidolla.",
-      image: "/pipes.webp",
+        "Maksa huolto- tai korjauslasku laskulla — myös erissä, ilman korkoa.",
+      image: "/tim-meyer-lre9kVnX9Tg-unsplash.jpg",
       objectPosition: "center center",
-      overlayOpacity: "0.50",
-      cta: "Varaa aika",
-      featureIcon: Wrench,
-      featureTitle: "Ohjelmointierikoisosaaminen",
-      featureDescription: "Huollot, ohjelmoinnit ja performance-ratkaisut kokemuksella.",
+      overlayOpacity: "0.45",
+      cta: "Ota yhteyttä",
+      featureIcon: Receipt,
+      featureTitle: "Laskutus ilman korkoa",
+      featureDescription: "Vähintään 30 vrk maksuaikaa, mahdollisuus maksaa myös erissä.",
     },
     {
       title: "Huollot",
@@ -35,17 +36,17 @@ export default function HeroSection() {
       featureDescription: "Laadukkaat varaosat ja huolellinen työn jälki.",
     },
     {
-      title: "Sähkötyöt vuosien kokemuksella",
-      subtitle: "Erikoistuneet auton sähköihin",
+      title: "Vaasan Varikko Oy",
+      subtitle: "Luotettava autokorjaamo Vaasassa",
       description:
-        "Teemme sähkövianhaut, ohjainlaitteiden ohjelmoinnit ja asennukset tarkasti ja ammattitaidolla.",
-      image: "/moottori.webp",
+        "Huollamme ja korjaamme kaikki automerkit ammattitaidolla ja vuosien kokemuksella — nopeasti, luotettavasti ja reilulla hinnalla.",
+      image: "/maantie.nmw.webp",
       objectPosition: "center center",
-      overlayOpacity: "0.50",
-      cta: "Lue lisaa",
-      featureIcon: Award,
-      featureTitle: "Auton sähkötyöt",
-      featureDescription: "Sähkövianhaut, ohjelmoinnit ja asennukset ammattitaidolla.",
+      overlayOpacity: "0.45",
+      cta: "Tutustu meihin",
+      featureIcon: Users,
+      featureTitle: "Ammattitaitoinen tiimi",
+      featureDescription: "Huollot, korjaukset ja sähkötyöt saman katon alta.",
     },
   ]
 
@@ -69,7 +70,7 @@ export default function HeroSection() {
   }
 
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section className="relative h-[80vh] min-h-[560px] overflow-hidden">
       {/* Background Slides */}
       <div className="absolute inset-0">
         {slides.map((slide, index) => (
@@ -81,7 +82,15 @@ export default function HeroSection() {
           >
             <div className="absolute inset-0 z-10" style={{ backgroundColor: `rgba(0,0,0,${slide.overlayOpacity})` }}></div>
             <div className="absolute inset-x-0 bottom-0 h-2/5 z-10 bg-gradient-to-t from-black to-transparent"></div>
-            <img src={slide.image || "/placeholder.svg"} alt={slide.title} className="w-full h-full object-cover" style={{ objectPosition: slide.objectPosition }} />
+            <Image
+              src={slide.image || "/placeholder.svg"}
+              alt={slide.title}
+              fill
+              sizes="100vw"
+              priority={index === 0}
+              className="object-cover"
+              style={{ objectPosition: slide.objectPosition }}
+            />
           </div>
         ))}
       </div>
@@ -138,11 +147,13 @@ export default function HeroSection() {
       {/* Opening Hours - fixed overlay, independent of slide content so it never changes/reloads on slide switch */}
       <div className="absolute bottom-6 inset-x-0 z-20 pointer-events-none">
         <div className="container mx-auto px-4">
-          <p className="text-white/60 text-xs sm:text-sm tracking-widest uppercase font-light">
-            <span>MA - PE 08:00 - 18:00</span>
-            <span className="ml-6">LA: SOPIMUKSEN MUKAAN</span>
-            <span className="ml-6">SU: KIINNI</span>
-          </p>
+          <div className="flex items-center justify-between text-white/60 text-xs sm:text-sm tracking-widest uppercase font-light">
+            <p>
+              <span>MA - PE 08:00 - 17:00</span>
+              <span className="ml-6">LA - SU: KIINNI</span>
+            </p>
+            <span>⭐⭐⭐⭐⭐ 5 tähden asiakaspalautteet</span>
+          </div>
         </div>
       </div>
 

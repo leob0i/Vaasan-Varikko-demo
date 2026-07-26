@@ -18,9 +18,9 @@ const barlow = Barlow({
 })
 
 export const metadata: Metadata = {
-  title: "VolttiAutokorjaamo - Premium Autokorjaamo",
+  title: "Vaasan Varikko Oy - Premium Autokorjaamo",
   description:
-    "VolttiAutokorjaamo tarjoaa laadukasta autohuoltoa, ohjelmointeja ja korjauspalvelua kaikille automerkeille. 12 kk tai 20 000 km takuu kaikelle työlle.",
+    "Vaasan Varikko Oy tarjoaa laadukasta autohuoltoa, ohjelmointeja ja korjauspalvelua kaikille automerkeille. Palvelua nopeasti ja vaivattomasti.",
   generator: 'v0.app'
 }
 

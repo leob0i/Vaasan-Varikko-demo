@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { 
@@ -63,10 +64,13 @@ export default function MeistaPage() {
         {/* Hero Section */}
         <section className="relative min-h-[70vh] flex items-center overflow-hidden">
           <div className="absolute inset-0">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?w=1920&h=1080&fit=crop"
-              alt="VolttiAutokorjaamo"
-              className="w-full h-full object-cover"
+              alt="Vaasan Varikko Oy"
+              fill
+              sizes="100vw"
+              priority
+              className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/80"></div>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
@@ -80,7 +84,7 @@ export default function MeistaPage() {
               </div>
               
               <h1 className="font-display text-5xl md:text-7xl font-bold text-foreground mb-6 leading-none tracking-tight uppercase">
-                VolttiAutokorjaamo
+                Vaasan Varikko Oy
               </h1>
               
               <p className="text-lg text-muted-foreground mb-8 max-w-2xl leading-relaxed">
@@ -140,7 +144,7 @@ export default function MeistaPage() {
 
               <div className="space-y-6">
                 <p className="text-muted-foreground text-lg leading-relaxed">
-                  VolttiAutokorjaamo perustettiin intohimosta autoja kohtaan ja halusta tarjota
+                  Vaasan Varikko Oy perustettiin intohimosta autoja kohtaan ja halusta tarjota
                   asiakkaille parasta mahdollista palvelua. Olemme erikoistuneet
                   premium-merkkeihin, mutta huollamme kaikki merkit.
                 </p>
@@ -192,7 +196,7 @@ export default function MeistaPage() {
         <section className="py-24">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="font-display text-4xl font-bold text-foreground mb-4 tracking-tight uppercase">Miksi VolttiAutokorjaamo?</h2>
+              <h2 className="font-display text-4xl font-bold text-foreground mb-4 tracking-tight uppercase">Miksi Vaasan Varikko Oy?</h2>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">

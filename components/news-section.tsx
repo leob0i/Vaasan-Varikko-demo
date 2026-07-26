@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Calendar, ArrowRight } from "lucide-react"
 
@@ -51,11 +52,13 @@ export default function NewsSection() {
               key={index}
               className="group cursor-pointer"
             >
-              <div className="relative overflow-hidden mb-6">
-                <img
+              <div className="relative overflow-hidden mb-6 h-64">
+                <Image
                   src={item.image || "/placeholder.svg"}
                   alt={item.title}
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-700"
+                  fill
+                  sizes="(min-width: 768px) 33vw, 100vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60"></div>
                 <div className="absolute top-4 left-4">

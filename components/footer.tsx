@@ -1,5 +1,6 @@
 import Link from "next/link"
-import { Facebook, Instagram, Mail, Phone, MapPin, Clock } from "lucide-react"
+import Image from "next/image"
+import { Facebook, Instagram, Mail, MapPin, Clock } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -9,11 +10,9 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-3 mb-8">
-              <div className="w-10 h-10 border border-primary flex items-center justify-center">
-                <span className="text-primary font-display font-bold text-lg">VA</span>
-              </div>
+              <Image src="/vw.logo.jpg" alt="Vaasan Varikko Oy" width={64} height={64} className="w-16 h-16 object-contain" />
               <div className="flex flex-col">
-                <span className="font-display font-bold text-lg tracking-wider text-foreground uppercase">VolttiAutokorjaamo</span>
+                <span className="font-display font-bold text-lg tracking-wider text-foreground uppercase">Vaasan Varikko Oy</span>
               </div>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed mb-8">
@@ -79,21 +78,16 @@ export default function Footer() {
             <Link href="/#yhteydenotto" className="block space-y-5 hover:opacity-80 transition-opacity duration-300">
               <div className="flex items-start gap-4">
                 <MapPin className="w-4 h-4 text-primary mt-0.5" />
-                <span className="text-muted-foreground text-sm">Santaradantie 7 D 123-125, 01380 Vantaa</span>
-              </div>
-              <div className="flex items-center gap-4">
-                <Phone className="w-4 h-4 text-primary" />
-                <span className="text-muted-foreground text-sm">0440766168</span>
+                <span className="text-muted-foreground text-sm">Pitkämäenkuja 2, 65350 Vaasa</span>
               </div>
               <div className="flex items-center gap-4">
                 <Mail className="w-4 h-4 text-primary" />
-                <span className="text-muted-foreground text-sm">info@volttiautokorjaamo.fi</span>
+                <span className="text-muted-foreground text-sm">vaasanvarikkooy@gmail.com</span>
               </div>
               <div className="flex items-start gap-4">
                 <Clock className="w-4 h-4 text-primary mt-0.5" />
                 <div className="text-muted-foreground text-sm">
                   <p>Ma-Pe: 8:00-17:00</p>
-                  <p>La: 9:00-14:00</p>
                 </div>
               </div>
             </Link>
@@ -102,7 +96,7 @@ export default function Footer() {
 
         <div className="border-t border-border mt-16 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-muted-foreground text-xs tracking-wide">© 2026 VolttiAutokorjaamo</p>
+            <p className="text-muted-foreground text-xs tracking-wide">© 2026 Vaasan Varikko Oy</p>
             <div className="flex space-x-8">
               <Link href="#" className="text-muted-foreground hover:text-primary text-xs tracking-wide transition-colors duration-300">
                 Tietosuoja

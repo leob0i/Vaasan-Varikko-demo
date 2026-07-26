@@ -5,7 +5,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { MapPin, Phone, Mail, Clock, Send } from "lucide-react"
+import { MapPin, Mail, Clock, Send } from "lucide-react"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -54,7 +54,7 @@ export default function ContactPage() {
       <section className="relative py-28 border-b border-border/50">
         <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-primary/0 via-primary to-primary/0" />
         <div className="container mx-auto px-4">
-          <p className="text-primary text-xs tracking-widest uppercase mb-4 font-display">VolttiAutokorjaamo</p>
+          <p className="text-primary text-xs tracking-widest uppercase mb-4 font-display">Vaasan Varikko Oy</p>
           <h1 className="font-display text-5xl md:text-7xl font-bold text-foreground tracking-tight uppercase">
             Ota yhteyttä
           </h1>
@@ -79,17 +79,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <p className="text-xs tracking-widest uppercase text-muted-foreground mb-1">Osoite</p>
-                <p className="text-foreground">Esimerkkikatu 1, 00100 Helsinki</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-5 py-5 border-b border-border/50">
-              <div className="w-10 h-10 border border-primary flex items-center justify-center shrink-0">
-                <Phone className="w-4 h-4 text-primary" />
-              </div>
-              <div>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mb-1">Puhelin</p>
-                <p className="text-foreground">+358 40 123 4567</p>
+                <p className="text-foreground">Pitkämäenkuja 2, 65350 Vaasa</p>
               </div>
             </div>
 
@@ -99,7 +89,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <p className="text-xs tracking-widest uppercase text-muted-foreground mb-1">Sähköposti</p>
-                <p className="text-foreground">info@volttiautokorjaamo.fi</p>
+                <p className="text-foreground">vaasanvarikkooy@gmail.com</p>
               </div>
             </div>
 
