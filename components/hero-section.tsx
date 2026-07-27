@@ -147,12 +147,24 @@ export default function HeroSection() {
       {/* Opening Hours - fixed overlay, independent of slide content so it never changes/reloads on slide switch */}
       <div className="absolute bottom-6 inset-x-0 z-20 pointer-events-none">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between sm:gap-0 text-white/60 text-xs sm:text-sm tracking-widest uppercase font-light">
-            <div className="flex flex-col sm:flex-row sm:items-center">
+          {/* Mobile layout */}
+          <div className="flex sm:hidden flex-col gap-1 text-white/60 text-xs tracking-widest uppercase font-light">
+            <div className="flex items-center justify-between">
+              <span>MA - PE 08:00 - 17:00</span>
+              <span>⭐⭐⭐⭐⭐</span>
+            </div>
+            <div className="flex items-center justify-between">
+              <span>LA - SU: KIINNI</span>
+              <span>5 tähden asiakaspalautteet</span>
+            </div>
+          </div>
+          {/* Desktop layout */}
+          <div className="hidden sm:flex sm:items-center sm:justify-between text-white/60 text-sm tracking-widest uppercase font-light">
+            <div className="flex sm:flex-row sm:items-center">
               <span>MA - PE 08:00 - 17:00</span>
               <span className="sm:ml-6">LA - SU: KIINNI</span>
             </div>
-            <div className="flex flex-col sm:flex-row sm:items-center">
+            <div className="flex sm:flex-row sm:items-center">
               <span>⭐⭐⭐⭐⭐</span>
               <span className="sm:ml-2">5 tähden asiakaspalautteet</span>
             </div>
@@ -161,7 +173,7 @@ export default function HeroSection() {
       </div>
 
       {/* Navigation Dots */}
-      <div className="absolute bottom-32 sm:bottom-12 left-1/2 transform -translate-x-1/2 z-30">
+      <div className="absolute bottom-20 sm:bottom-12 left-1/2 transform -translate-x-1/2 z-30">
         <div className="flex space-x-3">
           {slides.map((_, index) => (
             <button
