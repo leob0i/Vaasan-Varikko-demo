@@ -81,6 +81,7 @@ export default function HeroSection() {
             }`}
           >
             <div className="absolute inset-0 z-10" style={{ backgroundColor: `rgba(0,0,0,${slide.overlayOpacity})` }}></div>
+            <div className="absolute inset-0 z-10 bg-black/30 sm:hidden"></div>
             <div className="absolute inset-x-0 bottom-0 h-2/5 z-10 bg-gradient-to-t from-black to-transparent"></div>
             <Image
               src={slide.image || "/placeholder.svg"}
