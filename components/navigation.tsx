@@ -155,31 +155,27 @@ export default function Navigation() {
               >
                 Huollot
               </Link>
-
-              {/* Mobile Palvelut Accordion */}
-              <div>
-                <button
-                  onClick={() => setPalvelutOpen(!palvelutOpen)}
-                  className="flex items-center justify-between w-full px-4 py-4 text-lg tracking-wider uppercase text-muted-foreground hover:text-primary transition-colors duration-200"
-                >
-                  Palvelut
-                  <ChevronDown className={`w-5 h-5 transition-transform duration-200 ${palvelutOpen ? "rotate-180" : ""}`} />
-                </button>
-                {palvelutOpen && (
-                  <div className="pl-4 space-y-1 border-l border-primary/30 ml-4">
-                    {palvelutItems.map((item) => (
-                      <Link
-                        key={item.name}
-                        href={item.href}
-                        className="block px-4 py-3 text-lg tracking-wide text-muted-foreground hover:text-primary transition-colors duration-200"
-                        onClick={closeMenu}
-                      >
-                        {item.name}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
+              <Link
+                href="/korjaukset"
+                className="block px-4 py-4 text-lg tracking-wider uppercase text-muted-foreground hover:text-primary transition-colors duration-200"
+                onClick={closeMenu}
+              >
+                Korjaukset ja vianhaku
+              </Link>
+              <Link
+                href="/rengastyot"
+                className="block px-4 py-4 text-lg tracking-wider uppercase text-muted-foreground hover:text-primary transition-colors duration-200"
+                onClick={closeMenu}
+              >
+                Rengastyöt
+              </Link>
+              <Link
+                href="/palvelut"
+                className="block px-4 py-4 text-lg tracking-wider uppercase text-muted-foreground hover:text-primary transition-colors duration-200"
+                onClick={closeMenu}
+              >
+                Kaikki palvelut
+              </Link>
 
               <Link
                 href="/#yhteydenotto"
