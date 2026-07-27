@@ -57,8 +57,9 @@ export default function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
             <Image src="/vw.logo.jpg" alt="Vaasan Varikko Oy" width={64} height={64} className="w-16 h-16 object-contain" />
-            <div className="flex flex-col">
-              <span className="font-display font-bold text-lg tracking-wider text-foreground uppercase">Vaasan Varikko Oy</span>
+            <div className="flex flex-col leading-tight">
+              <span className="font-display font-bold text-lg tracking-wider text-foreground uppercase">Vaasan</span>
+              <span className="font-display font-bold text-lg tracking-wider text-foreground uppercase">Varikko Oy</span>
             </div>
           </Link>
 
